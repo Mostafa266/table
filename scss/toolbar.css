@@ -1,0 +1,205 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: #F5F6FA;
+}
+
+@font-face {
+  font-family: 'black';
+  src: url(../fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+  font-family: 'bold';
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'med';
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'reg';
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'light';
+  src: url(../fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: 'thin';
+  src: url(../fonts/Roboto-Thin.ttf);
+}
+
+.toolbar {
+  font-size: 14px;
+  height: 10.5rem;
+  padding: 0 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.toolbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.toolbar-title {
+  font-family: 'black';
+  font-size: 1.6em;
+  text-transform: capitalize;
+}
+
+.toolbar-settings .search {
+  width: 4.286em;
+  height: 4.286em;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#24b3bd), to(#369cc5));
+  background: linear-gradient(#24b3bd 0%, #369cc5 100%);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: -2em;
+  position: relative;
+}
+
+.toolbar-settings .search svg {
+  height: 100%;
+}
+
+.toolbar-settings .toolbar-items {
+  width: 28.571em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  list-style: none;
+  height: 4.643em;
+  border-radius: 5em;
+  margin-bottom: 0;
+}
+
+.toolbar-settings .toolbar-items ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.toolbar-settings .toolbar-items ul .toolbar-items--item {
+  position: relative;
+  width: 3.143em;
+  cursor: pointer;
+  height: 3.143em;
+  background-color: #F7F8FA;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px;
+  border-radius: 50%;
+}
+
+.toolbar-settings .toolbar-items ul .toolbar-items--item .notificationAlert {
+  position: absolute;
+  right: 28%;
+  top: 1%;
+}
+
+.toolbar-settings .toolbar-items ul .divider {
+  margin: 0 0.714em;
+  width: 1px;
+  height: 3.143em;
+  background-color: #EBEBF2;
+}
+
+.toolbar-settings .toolbar-items .profileData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 31%;
+  margin: 0 0.714em;
+}
+
+.toolbar-settings .toolbar-items .profileData .data {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: -1.429;
+  position: relative;
+}
+
+.toolbar-settings .toolbar-items .profileData .data span {
+  margin-right: 0.357em;
+}
+
+.toolbar-settings .toolbar-items .profileData .profileImg {
+  cursor: pointer;
+  width: 3.143em;
+  height: 3.143em;
+  border-radius: 50%;
+  width: 100%;
+}
+
+.toolbar-settings .toolbar-items .profileData .profileImg img {
+  height: 100%;
+}
+/*# sourceMappingURL=toolbar.css.map */

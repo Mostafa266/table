@@ -1,0 +1,185 @@
+// this site used to name hex code for colors
+// https://chir.ag/projects/name-that-color/#28ADBF
+
+html{
+    font-size: 14px;
+}
+body{
+    background-color:#F5F6FA;
+}
+$white:#ffffff;
+
+$offWhite:#EEEFF3;
+$offWhite-2:#EFF0F4;
+$offWhite-3:#F5F6FA;
+$off-white-4:#F7F8FA;
+$off-white-5:#EBEBF2;
+
+
+
+
+$pelorous:#33ACC0;
+$bondiBlue:#0B8BB4;
+
+
+// dark grey
+$dark-grey:#7F8FA4;
+
+
+$java:#24B1BD;
+$scooter:#28ADBF;
+
+@font-face {
+    font-family: 'black';
+    src: url(../fonts/Roboto-Black.ttf);
+  }
+  
+  @font-face {
+    font-family: 'bold';
+    src: url(../fonts/Roboto-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: 'med';
+    src: url(../fonts/Roboto-Medium.ttf);
+  }
+  
+  @font-face {
+    font-family: 'reg';
+    src: url(../fonts/Roboto-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: 'light';
+    src: url(../fonts/Roboto-Light.ttf);
+  }
+  
+  @font-face {
+    font-family: 'thin';
+    src: url(../fonts/Roboto-Thin.ttf);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.toolbar{
+    font-size: 14px;
+    height: 10.5rem;
+    padding: 0 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    &-title{
+        font-family: 'black';
+        font-size: 1.6em;
+        text-transform: capitalize;
+    }
+    &-settings{
+        .search{
+            width: 4.286em;
+            height: 4.286em;
+            border-radius: 50%;
+            background: linear-gradient(#24b3bd 0%, #369cc5 100%);
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left: -2em;
+            position: relative;
+            svg{
+                height: 100%;
+            }
+        }
+        .toolbar-items{
+            width: 28.571em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $white;
+            list-style: none;
+            height: 4.643em;
+            // margin-left: 2.857em;
+            border-radius: 5em;
+            margin-bottom: 0;
+            ul{
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 0;
+                align-items: center;
+                .toolbar-items--item{
+                    position: relative;
+                    width: 3.143em;
+                    cursor: pointer;
+                    height: 3.143em;
+                    background-color: $off-white-4;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 10px;
+                    border-radius: 50%;
+                    .notificationAlert{
+                        position: absolute;
+                        right: 28%;
+                        top: 1%;
+                    }
+                  
+                }
+                .divider{
+                    margin: 0 0.714em;
+                    width: 1px;
+                    height: 3.143em;
+                    background-color: $off-white-5;
+                }
+            }
+            .profileData{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 31%;
+                margin: 0 0.714em;
+                .data{
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    left: -1.429;
+                    position: relative;
+                    span{
+                        margin-right: 0.357em;
+                    }
+                }
+                .profileImg{
+                    cursor: pointer;
+                    width: 3.143em;
+                    height: 3.143em;
+                    border-radius: 50%;
+                    width: 100%;
+                    img{
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+}
